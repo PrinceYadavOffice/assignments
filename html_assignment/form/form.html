@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="title">
+            <h2>TO The New</h2>
+        </div>
+        <div class="header-menu">
+            <ul>
+                <li>Home</li>
+                <li> Quick Help</li>
+            </ul>
+        </div>
+    </header>
+
+    <section>
+        <div class="main-form">
+            <div class="form-header">
+                Bug Report
+            </div>
+            <div class="form-body">
+                   <form>
+                       <label for="title">Title:<sup>*</sup></label>
+                       <input type="text" name="title" id="title"required>
+
+                       <label for="description">Description:<sup>*</sup></label>
+                       <textarea name="description" rows="5"></textarea>
+
+                       <label for="Operating">Operating system:<sup>*</sup></label>
+                       <select>
+                           <option value="WindowsXP">WindowsXP</option>
+                           <option value="Windows Vista">Windows Vista</option>
+                           <option value="Windows 7">Windows 7</option>
+                           <option value="Windows 10">Windows 10</option>
+                       </select>
+                       <label for="product">Product:<sup>*</sup></label>
+                       <select>
+                           <option value="formoid">Formoid</option>
+                           <option value="office">Office</option>
+                           
+                       </select>
+                       <label for="version">
+                           Version:<sup>*</sup>
+                       </label>
+                       <input type="text" name="version" class="version-field" required>
+
+                       <label>License:</label>
+                       <div class="radio-group">
+                           <div class="radio-button">
+                               <input type="radio" value="Free" name="license">
+                               <label>Free</label>
+                            </div>
+                            <div class="radio-button">
+                                <input type="radio" value="Free" name="license">
+                               <label>Business</label>
+                            </div>
+                        </div>
+                        <label>
+                            Severity:
+                        </label>
+                        <select>
+                            <option value="high">High</option>
+                            <option value="medium">Medium</option>
+                            <option value="low">Low</option>
+                        </select>
+                        <label>
+                            Attachments:
+                        </label>
+                        <div class="file-field">
+                            <input type="file" id="file">
+                            <label for="file">Choose File</label>
+                        </div>
+                        
+                        
+                   </form>         
+
+            </div>
+            <div class="form-footer">
+                <button>Send</button>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
