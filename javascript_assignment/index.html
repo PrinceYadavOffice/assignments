@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Assignment</title>
+</head>
+<body>
+    
+
+
+    <!-- // var amount = parseInt(prompt("Enter amount :"));
+    var interest= parseFloat(prompt("Enter Interest Rate:"));
+    var years = parseInt(prompt("Enter No of Years:"));
+
+    var simple_Interest = (amount*interest*years)/100;
+
+    console.log("Amount :",amount,"Interest:", interest,"Year", years)
+    console.log("Simple Interest : ", simple_Interest); -->
+
+    <!-- function ispalin(string){
+        var len = string.length;        
+        for (var i=0; i<len/2;i++){
+            if(str[i]!==str[len-i-1]){
+                return false;
+            }
+        }
+        return true;
+    }
+    
+    var str = prompt("Check string is Palindrome or not :");
+    var result = ispalin(str);
+    if(!result){
+        alert("Not Palindrome");
+    }
+    alert("Palindrome"); -->
+
+    <!-- function areaofcircle(radius){
+        const pi = 3.14;
+        return pi * radius*radius;
+    }
+
+    var radius = parseInt(prompt("Enter the Radius:"));
+    var area = areaofcircle(radius);
+    console.log("Area :",area);  -->
+
+    <!-- var employee={
+        first_name:'Prince',
+        last_name:'Yadav',
+        role:'Software Engineer'
+    }
+    
+    console.log("Employee Object : ", employee)
+    
+    var person = JSON.parse(JSON.stringify(employee));
+    console.log("Employee object info copied to Person Object",person); -->
+    
+
+<script>
+    var list0femployee =[
+        {
+            name:'Ashutosh',
+            age:21,
+            salary:50000,
+            dob:'15/11/2000'
+        },
+        {
+            name:'Shubham',
+            age:24,
+            salary:40000,
+            dob:'7/03/1997'
+        },
+        {
+            name:'Abhishek',
+            age:26,
+            salary:4000,
+            dob:'22/07/1995'
+        },
+        {
+            name:'Karan',
+            age:25,
+            salary:15000,
+            dob:'23/05/1996'
+        },
+        {
+            name:'arun',
+            age:21,
+            salary:500,
+            dob:'5/7/2000'
+        }
+    ];
+    console.log("list of employee object",list0femployee);
+    var newlist = list0femployee.filter(employee =>{
+        if (employee.salary<1000){
+            return employee.salary=employee.salary*5;
+        }       
+    })  
+    
+    
+    var groupbyage = function (gropage, key){
+        return gropage.reduce((result, currentemployee)=>{
+
+           (result[currentemployee[key]]=result[currentemployee[key]] || []).push(currentemployee);
+
+           return result;
+        },{});
+    }
+
+    var personGroupByAge = groupbyage(list0femployee,"age");
+    console.log("Group By :", personGroupByAge);
+
+    console.log("Filtered List:",newlist);
+
+    
+
+</script>    
+</body>
+</html>
