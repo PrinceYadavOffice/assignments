@@ -108,7 +108,6 @@ for i in range(turns):
         if player_B == "s":
             print("A WINS")
             awin += 1
-
         else:
             print("B WINS")
             bwin += 1
@@ -131,6 +130,8 @@ for i in range(turns):
 
 if awin>bwin:
     print("A WINS TOURNAMENT")
+elif awin == bwin:
+    print("DRAW")
 else:
     print("B WINS TOURNAMENT")
 
