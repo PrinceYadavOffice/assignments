@@ -9,7 +9,7 @@ class Employee:
 
     def addEmail(self):
         self.email = self.first_name+"."+self.last_name+"@tothenew.com"
-        return f"Email added succesfully {self.email}"
+        return f"{self.email}"
 
     def raise_salary(self):
         self.salary += (self.salary * Employee.raise_percentage//100)
