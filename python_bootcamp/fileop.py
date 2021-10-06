@@ -101,7 +101,7 @@ result=replace_text_extened('demo2.txt','prince','Prince Yadav',replace_all=True
 print(result)
 
 
-#7
+7
 import datetime
 from csv import DictWriter
 def logger(func):
@@ -114,6 +114,7 @@ def logger(func):
             strng = {'timestamp':ct,'input_params':(a,b),'result':result}
             healderlist=['timestamp','input_params','result']
             csv_writer=DictWriter(file, fieldnames=healderlist)
+            print(type(csv_writer))
             csv_writer.writeheader()
             csv_writer.writerow(strng)
         return
@@ -125,6 +126,38 @@ sum2(2,4)
 
 
 #q8
+import os
+def rename_all(dir_path, pattern, suffix):
+    path='/home/prince/assign/python_bootcamp/'+f'{dir_path}'
+    for count,filename in enumerate(os.listdir(path)):
+        print(filename)
+        dst = pattern+str(count+1) + suffix+'.txt'
+        src = path+str(filename)
+        dst =path+dst
+        os.rename(src, dst)
+
+rename_all('folder1/folder2/','Test_file_', '_renamed')
+
+
+#Q9
+
+def list_files(dir_path, nested=True):
+    path='/home/prince/assign/python_bootcamp/'+f'{dir_path}'
+    if nested==False:
+        for count, filename in enumerate(os.listdir(path)):
+            if filename.endswith(".txt"):
+                print(filename)
+    else:
+        for root, dirs, files in os.walk(path):
+            for file in files:
+                if file.endswith(".txt"):
+                    print(file)
+list_files('folder1')
+
+
+
+
+
 
 
 
