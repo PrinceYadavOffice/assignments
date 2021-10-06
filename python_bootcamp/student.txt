@@ -1,0 +1,4 @@
+['{"py/object": "__main__.Student", "name": "Prince", "roll_no": 25, "course": "Python"}']
+['{"py/object": "__main__.Student", "name": "Shubham", "roll_no": 54, "course": "Feen"}']
+['{"py/object": "__main__.Student", "name": "Ashutosh", "roll_no": 5, "course": "Devops"}']
+['{"py/object": "__main__.Student", "name": "Aman", "roll_no": 3, "course": "CloudOps"}']
